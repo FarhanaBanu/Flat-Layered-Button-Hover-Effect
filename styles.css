@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+}
+
+.btn{
+    border: 5px solid #fff;
+    color: #fff;
+    display: block;
+    font-family: sans-serif;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+
+.btn:before{
+    content: '';
+    background-color: #32e0c4;
+    position: absolute;
+    height:103%;
+    width:103%;
+    z-index: -1;
+    left: 0.25rem;
+    top: 0.35rem;
+    box-shadow: 10px 10px  #ea907a, 20px 20px #ffcd3c;
+    transition:all 0.4s ease;
+}
+
+
+.btn:hover:before{
+    box-shadow:none;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+
+}
